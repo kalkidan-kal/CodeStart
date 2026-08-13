@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStart - Welcome</title>
+    <style>
+        /* Basic CSS Reset & Style */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #eef7ff 0%, #ffffff 100%);
+            color: #1a2b49;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a2b49;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #0d5cad;
+        }
+
+        .btn-nav {
+            background-color: #1b5fa8;
+            color: white !important;
+            padding: 10px 22px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .btn-nav:hover {
+            background-color: #144985;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            padding: 40px 50px;
+            align-items: flex-start; /* Aligns items to the top */
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-text {
+            flex: 1;
+            margin-top: -20px; /* Pulls the text block slightly upward */
+        }
+
+        .hero-text h1 {
+            font-size: 46px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: #112236;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* Hero Image */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        /* Main Call to Action Button */
+        .btn-main {
+            background-color: #008080;
+            color: white;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-main:hover {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">CodeStart</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" class="btn-nav">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+       <div class="hero-text">
+         <h1>START YOUR CODING<br>JOURNEY TODAY!</h1>
+         <p>Learn HTML, CSS, and JavaScript with simple,<br> hands-on tutorials designed for absolute beginners.</p>
+         <button class="btn-main" onclick="startLearning()">Browse Free Courses</button>
+       </div>
+       <div class="hero-image">
+         <!-- Replace the src with your actual image file name -->
+         <img src="happy-software-developer-stockcake.jpg" alt="Developer Illustration">
+       </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function startLearning() {
+            alert("Welcome to your coding journey!");
+        }
+    </script>
+</body>
+</html>
